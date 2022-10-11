@@ -388,7 +388,7 @@ h6 {
 }
 
 
-#git::before {
+#rb::before {
     display: inline-block;
     content: '';
     border-radius: 100%;
