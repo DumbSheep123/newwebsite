@@ -1,12 +1,21 @@
+/*!
+ * DrawSVGPlugin 3.10.4
+ * https://greensock.com
+ *
+ * @license Copyright 2022, GreenSock. All rights reserved.
+ * *** DO NOT DEPLOY THIS FILE ***
+ * This is a trial version that only works locally and on domains like codepen.io and codesandbox.io.
+ * Loading it on an unauthorized domain violates the license and will cause a redirect.
+ * Get the unrestricted file by joining Club GreenSock at https://greensock.com/club
+ * @author: Jack Doyle, jack@greensock.com
+ */
+
 !(function (e, t) {
     "object" == typeof exports && "undefined" != typeof module ? t(exports) : "function" == typeof define && define.amd ? define(["exports"], t) : t(((e = e || self).window = e.window || {}));
 })(this, function (e) {
     "use strict";
     function j() {
         return "undefined" != typeof window;
-    }
-    function k() {
-        return r || (j() && (r = window.gsap) && r.registerPlugin && r);
     }
     function n(e) {
         return Math.round(1e4 * e) / 1e4;
@@ -23,9 +32,6 @@
     }
     function s(e, t, n, r, i, s) {
         return M(Math.pow((o(n) - o(e)) * i, 2) + Math.pow((o(r) - o(t)) * s, 2));
-    }
-    function t(e) {
-        return console.warn(e);
     }
     function u(e) {
         return "non-scaling-stroke" === e.getAttribute("vector-effect");
@@ -195,10 +201,4 @@
             getLength: B,
             getPosition: C,
         };
-    k() && r.registerPlugin(i), (e.DrawSVGPlugin = i), (e.default = i);
-    if (typeof window === "undefined" || window !== e) {
-        Object.defineProperty(e, "__esModule", { value: !0 });
-    } else {
-        delete e.default;
-    }
 });
